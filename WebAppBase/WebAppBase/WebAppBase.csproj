@@ -160,7 +160,6 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SessionKeyConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
@@ -188,7 +187,6 @@
     <Compile Include="Models\Base\SortTargetModel.cs" />
     <Compile Include="Models\Chart\ChartJSModels.cs" />
     <Compile Include="Models\Chart\ChartTargetModel.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Sorts\SortListModel.cs" />
     <Compile Include="Models\Sorts\SortModel.cs" />
@@ -551,6 +549,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Pasys.Web.Identity\Pasys.Web.Identity.csproj">
+      <Project>{2fb3c6a7-89bb-4048-a0aa-e7e1e3b01b93}</Project>
+      <Name>Pasys.Web.Identity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SharedUtilitys\SharedUtilitys.csproj">
       <Project>{beb81503-77c0-4308-b197-0b2a52220d16}</Project>
       <Name>SharedUtilitys</Name>
